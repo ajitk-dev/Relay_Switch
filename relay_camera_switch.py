@@ -3,7 +3,6 @@ from time import sleep
 
 RELAY_PIN = 17 
 
-# Initialize the OutputDevice for the relay
 relay = OutputDevice(RELAY_PIN, initial_value=False)
 
 def turn_on_relay():
@@ -30,4 +29,4 @@ try:
         
 except KeyboardInterrupt:
     print("\nProgram interrupted. Turning relay off.")
-    relay.off()  # Ensure the relay is turned off when interrupted
+    relay.off()  
